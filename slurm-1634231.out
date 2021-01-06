@@ -1,0 +1,381 @@
+a00860.science.domain
+7
+2021-01-06 12:56:43.653966: W tensorflow/stream_executor/platform/default/dso_loader.cc:60] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2021-01-06 12:56:43.653994: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+--------------------------------------------------------------------------------
+>>> Logged by: 'entry_func' in 'train.py'
+Fitting model in path:
+/home/bdp954/PMPU_tf_version2/MPU/MultiPlanarUNet/mpunet/my_project
+Logging to /home/bdp954/PMPU_tf_version2/MPU/MultiPlanarUNet/mpunet/my_project/model/train.log
+Assembling file dict from /home/bdp954/PMPU_tf_version2/output1/quarter/train.
+Reading from /home/bdp954/PMPU_tf_version2/output1/quarter/train/cities_name
+train set comprises 24 files.
+Assembling file dict from /home/bdp954/PMPU_tf_version2/output1/quarter/train.
+Reading from /home/bdp954/PMPU_tf_version2/output1/quarter/train/cities_name
+train set comprises 24 files.
+INFO:tensorflow:Building U-Net.
+Building U-Net.
+INFO:tensorflow:Building ConvGaussian.
+Building ConvGaussian.
+INFO:tensorflow:Building ConvGaussian.
+Building ConvGaussian.
+2021-01-06 12:56:54.103062: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-01-06 12:56:54.104427: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+[OBS] Considering only system-wise allowed GPUs: ['7'] (set in CUDA_VISIBLE_DEVICES env variable).
+2021-01-06 12:56:55.396150: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:1a:00.0 name: TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-01-06 12:56:55.396284: W tensorflow/stream_executor/platform/default/dso_loader.cc:60] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2021-01-06 12:56:55.396342: W tensorflow/stream_executor/platform/default/dso_loader.cc:60] Could not load dynamic library 'libcublas.so.11'; dlerror: libcublas.so.11: cannot open shared object file: No such file or directory
+2021-01-06 12:56:55.396393: W tensorflow/stream_executor/platform/default/dso_loader.cc:60] Could not load dynamic library 'libcublasLt.so.11'; dlerror: libcublasLt.so.11: cannot open shared object file: No such file or directory
+2021-01-06 12:56:55.398503: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-01-06 12:56:55.398834: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-01-06 12:56:55.400930: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-01-06 12:56:55.401033: W tensorflow/stream_executor/platform/default/dso_loader.cc:60] Could not load dynamic library 'libcusparse.so.11'; dlerror: libcusparse.so.11: cannot open shared object file: No such file or directory
+2021-01-06 12:56:55.401089: W tensorflow/stream_executor/platform/default/dso_loader.cc:60] Could not load dynamic library 'libcudnn.so.8'; dlerror: libcudnn.so.8: cannot open shared object file: No such file or directory
+2021-01-06 12:56:55.401099: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1757] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2021-01-06 12:56:55.417877: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-01-06 12:56:55.418000: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-01-06 12:56:55.418034: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-01-06 12:56:55.418042: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      
+--------------------------------------------------------------------------------
+>>> Logged by: '__init__' in 'hparams.py'
+YAML path:    /home/bdp954/PMPU_tf_version2/MPU/MultiPlanarUNet/mpunet/my_project/train_hparams.yaml
+[WARNING] Path /home/bdp954/miniconda3/envs/new/lib/python3.6/site-packages does not contain a Git repository, or Git is not installed on this system.
+-- The software verison match could not be varified against the hyperparameter file.
+-- Software version will not be added to the hyperparameter file.
+--------------------------------------------------------------------------------
+>>> Logged by: '_base_loader_func' in 'data_preparation_funcs.py'
+Looking for images...
+--------------------------------------------------------------------------------
+>>> Logged by: '_log' in 'image_pair_loader.py'
+ImagePairLoader(id=train, images=10, data_dir=/home/bdp954/MPU_Project_toy/MultiPlanarUNet/toy_data/train)
+--- Image subdir: /home/bdp954/MPU_Project_toy/MultiPlanarUNet/toy_data/train/images
+--- Label subdir: /home/bdp954/MPU_Project_toy/MultiPlanarUNet/toy_data/train/labels
+ImagePairLoader(id=val, images=2, data_dir=/home/bdp954/MPU_Project_toy/MultiPlanarUNet/toy_data/val)
+--- Image subdir: /home/bdp954/MPU_Project_toy/MultiPlanarUNet/toy_data/val/images
+--- Label subdir: /home/bdp954/MPU_Project_toy/MultiPlanarUNet/toy_data/val/labels
+--------------------------------------------------------------------------------
+>>> Logged by: 'log' in 'auditor.py'
+-------------------
+
+Audit for 12 images
+-------------------
+Total memory GiB:  0.001
+Number of classes: 4
+
+2D:
+Real space span:   32.000
+Sample dim:        128.000
+
+3D:
+Sample dim:        32
+Real space span:   32.000
+Box span:          32.000
+--------------------------------------------------------------------------------
+>>> Logged by: 'set_value' in 'hparams.py'
+Entry of name 'real_space_span' already set in subdir 'fit' with value '32.0'. Skipping (overwrite=False).
+Entry of name 'dim' already set in subdir 'build' with value '128'. Skipping (overwrite=False).
+Entry of name 'n_channels' already set in subdir 'build' with value '1'. Skipping (overwrite=False).
+Entry of name 'n_classes' already set in subdir 'build' with value '4'. Skipping (overwrite=False).
+--------------------------------------------------------------------------------
+>>> Logged by: 'save_current' in 'hparams.py'
+Saving current YAML configuration to file:
+ /home/bdp954/PMPU_tf_version2/MPU/MultiPlanarUNet/mpunet/my_project/train_hparams.yaml
+--------------------------------------------------------------------------------
+>>> Logged by: '_base_loader_func' in 'data_preparation_funcs.py'
+Preparing dataset ImagePairLoader(id=train, images=10, data_dir=/home/bdp954/MPU_Project_toy/MultiPlanarUNet/toy_data/train)
+toy_data_0
+--- loaded:     False
+--- shape:      [32 32 32  1]
+--- bg class    0
+--- bg value    ['1pct']
+--- scaler      RobustScaler
+--- real shape: [32. 32. 32.]
+--- pixdim:     [1. 1. 1.]
+toy_data_1
+--- loaded:     False
+--- shape:      [32 32 32  1]
+--- bg class    0
+--- bg value    ['1pct']
+--- scaler      RobustScaler
+--- real shape: [32. 32. 32.]
+--- pixdim:     [1. 1. 1.]
+toy_data_2
+--- loaded:     False
+--- shape:      [32 32 32  1]
+--- bg class    0
+--- bg value    ['1pct']
+--- scaler      RobustScaler
+--- real shape: [32. 32. 32.]
+--- pixdim:     [1. 1. 1.]
+toy_data_3
+--- loaded:     False
+--- shape:      [32 32 32  1]
+--- bg class    0
+--- bg value    ['1pct']
+--- scaler      RobustScaler
+--- real shape: [32. 32. 32.]
+--- pixdim:     [1. 1. 1.]
+toy_data_4
+--- loaded:     False
+--- shape:      [32 32 32  1]
+--- bg class    0
+--- bg value    ['1pct']
+--- scaler      RobustScaler
+--- real shape: [32. 32. 32.]
+--- pixdim:     [1. 1. 1.]
+toy_data_5
+--- loaded:     False
+--- shape:      [32 32 32  1]
+--- bg class    0
+--- bg value    ['1pct']
+--- scaler      RobustScaler
+--- real shape: [32. 32. 32.]
+--- pixdim:     [1. 1. 1.]
+toy_data_6
+--- loaded:     False
+--- shape:      [32 32 32  1]
+--- bg class    0
+--- bg value    ['1pct']
+--- scaler      RobustScaler
+--- real shape: [32. 32. 32.]
+--- pixdim:     [1. 1. 1.]
+toy_data_7
+--- loaded:     False
+--- shape:      [32 32 32  1]
+--- bg class    0
+--- bg value    ['1pct']
+--- scaler      RobustScaler
+--- real shape: [32. 32. 32.]
+--- pixdim:     [1. 1. 1.]
+toy_data_8
+--- loaded:     False
+--- shape:      [32 32 32  1]
+--- bg class    0
+--- bg value    ['1pct']
+--- scaler      RobustScaler
+--- real shape: [32. 32. 32.]
+--- pixdim:     [1. 1. 1.]
+toy_data_9
+--- loaded:     False
+--- shape:      [32 32 32  1]
+--- bg class    0
+--- bg value    ['1pct']
+--- scaler      RobustScaler
+--- real shape: [32. 32. 32.]
+--- pixdim:     [1. 1. 1.]
+--------------------------------------------------------------------------------
+>>> Logged by: '_base_loader_func' in 'data_preparation_funcs.py'
+Preparing dataset ImagePairLoader(id=val, images=2, data_dir=/home/bdp954/MPU_Project_toy/MultiPlanarUNet/toy_data/val)
+toy_data_0
+--- loaded:     False
+--- shape:      [32 32 32  1]
+--- bg class    0
+--- bg value    ['1pct']
+--- scaler      RobustScaler
+--- real shape: [32. 32. 32.]
+--- pixdim:     [1. 1. 1.]
+toy_data_1
+--- loaded:     False
+--- shape:      [32 32 32  1]
+--- bg class    0
+--- bg value    ['1pct']
+--- scaler      RobustScaler
+--- real shape: [32. 32. 32.]
+--- pixdim:     [1. 1. 1.]
+--------------------------------------------------------------------------------
+>>> Logged by: '__init__' in 'eager_queue.py'
+'Eager' queue created:
+  Dataset:      ImagePairLoader(id=train, images=10, data_dir=/home/bdp954/MPU_Project_toy/MultiPlanarUNet/toy_data/train)
+Preloading all 10 images now... (eager)
+'Eager' queue created:
+  Dataset:      ImagePairLoader(id=val, images=2, data_dir=/home/bdp954/MPU_Project_toy/MultiPlanarUNet/toy_data/val)
+Preloading all 2 images now... (eager)
+--------------------------------------------------------------------------------
+>>> Logged by: 'sample_random_views_with_angle_restriction' in 'sample_grid.py'
+Generating 6 random views...
+[OBS] Weighting random views by median res: [1. 1. 1.]
+--------------------------------------------------------------------------------
+>>> Logged by: 'load_or_create_views' in 'data_preparation_funcs.py'
+View SD:     0.1
+--------------------------------------------------------------------------------
+>>> Logged by: 'prepare_for_multi_view_unet' in 'data_preparation_funcs.py'
+Views:       N=6
+             [-0.90038067  0.1911425   0.3908698 ]
+             [0.28371257 0.95887321 0.00832709]
+             [-0.23007215  0.86446667  0.44694987]
+             [ 0.56364943 -0.15854812  0.81065517]
+             [ 0.01956049 -0.89795486  0.43965265]
+             [0.75799409 0.45081462 0.47139277]
+
+--------------------------------------------------------------------------------
+>>> Logged by: 'get_sequencers' in 'data_preparation_funcs.py'
+Preparing sequence objects...
+--------------------------------------------------------------------------------
+>>> Logged by: 'get_sequence' in 'utils.py'
+Using on-the-fly augmenters:
+Elastic2D(alpha=[0, 450], sigma=[20, 30], apply_prob=0.333)
+--------------------------------------------------------------------------------
+>>> Logged by: 'log' in 'isotrophic_live_view_sequence_2d.py'
+
+Is validation:               False
+Using real space span:       32.0
+Using sample dim:            32
+Using real space sample res: 1.0
+N fg slices:                 4
+Batch size:                  8
+Force all FG:                True
+Noise SD:                    0.1
+Augmenters:                  [Elastic2D(alpha=[0, 450], sigma=[20, 30], apply_prob=0.333)]
+
+Is validation:               True
+Using real space span:       32.0
+Using sample dim:            32
+Using real space sample res: 1.0
+N fg slices:                 4
+Batch size:                  8
+Force all FG:                True
+Noise SD:                    0.0
+Augmenters:                  None
+length of orginal data is= 1000000000000
+(8, 32, 32, 1) (8, 1024, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+(8, 32, 32, 1) (8, 1024, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+(8, 32, 32, 1) (8, 1024, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+length of orginal data is= 1000000000000
+(8, 32, 32, 1) (8, 1024, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+(8, 32, 32, 1) (8, 1024, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+(8, 32, 32, 1) (8, 1024, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+image and label shape before reshape (32, 32, 1) (1024, 1)
+image and label shape after reshape (32, 32, 1) (32, 32, 1)
+--------------------------------------------------------------------------------
+>>> Logged by: 'await_and_set_free_GPU' in 'system.py'
+Waiting for free GPU.
+Found free GPU: 7
+['cities_name']
+Traceback (most recent call last):
+  File "/home/bdp954/miniconda3/envs/new/bin/mp", line 8, in <module>
+    sys.exit(entry_func())
+  File "/home/bdp954/miniconda3/envs/new/lib/python3.6/site-packages/mpunet/bin/mp.py", line 55, in entry_func
+    mod.entry_func(parsed.args)
+  File "/home/bdp954/miniconda3/envs/new/lib/python3.6/site-packages/mpunet/bin/train.py", line 606, in entry_func
+    raise e
+  File "/home/bdp954/miniconda3/envs/new/lib/python3.6/site-packages/mpunet/bin/train.py", line 602, in entry_func
+    run(project_dir=project_dir, gpu_mon=gpu_mon, logger=logger, args=args)
+  File "/home/bdp954/miniconda3/envs/new/lib/python3.6/site-packages/mpunet/bin/train.py", line 545, in run
+    train1(cf)
+  File "/home/bdp954/miniconda3/envs/new/lib/python3.6/site-packages/mpunet/bin/train.py", line 363, in train1
+    prob_unet._build(x, y, is_training=True, one_hot_labels=cf.one_hot_labels)
+  File "/home/bdp954/miniconda3/envs/new/lib/python3.6/site-packages/mpunet/models/probabilistic_unet.py", line 419, in _build
+    self._q = self._posterior(img, seg)
+  File "/home/bdp954/miniconda3/envs/new/lib/python3.6/site-packages/tensorflow/python/keras/engine/base_layer_v1.py", line 786, in __call__
+    outputs = call_fn(cast_inputs, *args, **kwargs)
+  File "/home/bdp954/miniconda3/envs/new/lib/python3.6/site-packages/tensorflow/python/autograph/impl/api.py", line 667, in wrapper
+    return converted_call(f, args, kwargs, options=options)
+  File "/home/bdp954/miniconda3/envs/new/lib/python3.6/site-packages/tensorflow/python/autograph/impl/api.py", line 396, in converted_call
+    return _call_unconverted(f, args, kwargs, options)
+  File "/home/bdp954/miniconda3/envs/new/lib/python3.6/site-packages/tensorflow/python/autograph/impl/api.py", line 478, in _call_unconverted
+    return f(*args, **kwargs)
+  File "/home/bdp954/miniconda3/envs/new/lib/python3.6/site-packages/tensorflow/python/keras/engine/training.py", line 446, in call
+    raise NotImplementedError('When subclassing the `Model` class, you should '
+NotImplementedError: When subclassing the `Model` class, you should implement a `call` method.
+Exception ignored in: <bound method Buckets.__del__ of <tensorflow.python.eager.monitoring.ExponentialBuckets object at 0x7fbf7283f978>>
+Traceback (most recent call last):
+  File "/home/bdp954/miniconda3/envs/new/lib/python3.6/site-packages/tensorflow/python/eager/monitoring.py", line 407, in __del__
+AttributeError: 'NoneType' object has no attribute 'TFE_MonitoringDeleteBuckets'
