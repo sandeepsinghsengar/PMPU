@@ -1,0 +1,17 @@
+  File "/home/bdp954/miniconda3/envs/new/lib/python3.6/site-packages/mpunet/models/probabilistic_unet.py", line 501, in elbo
+    loss_mask=loss_mask, one_hot_labels=one_hot_labels)
+  File "/home/bdp954/miniconda3/envs/new/lib/python3.6/site-packages/mpunet/utils/training_utils.py", line 43, in ce_loss
+    logits = tf.compat.v1.transpose(a=logits, perm=[0,2,3,1])
+  File "/home/bdp954/miniconda3/envs/new/lib/python3.6/site-packages/tensorflow/python/ops/array_ops.py", line 2114, in transpose
+    a = ops.convert_to_tensor(a, name="a")
+  File "/home/bdp954/miniconda3/envs/new/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 1341, in convert_to_tensor
+    ret = conversion_func(value, dtype=dtype, name=name, as_ref=as_ref)
+  File "/home/bdp954/miniconda3/envs/new/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py", line 321, in _constant_tensor_conversion_function
+    return constant(v, dtype=dtype, name=name)
+  File "/home/bdp954/miniconda3/envs/new/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py", line 262, in constant
+    allow_broadcast=True)
+  File "/home/bdp954/miniconda3/envs/new/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py", line 300, in _constant_impl
+    allow_broadcast=allow_broadcast))
+  File "/home/bdp954/miniconda3/envs/new/lib/python3.6/site-packages/tensorflow/python/framework/tensor_util.py", line 439, in make_tensor_proto
+    raise ValueError("None values not supported.")
+ValueError: None values not supported.
